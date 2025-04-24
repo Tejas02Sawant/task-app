@@ -20,9 +20,6 @@ export const routes: Routes = [{
         component: UserTasksComponent,
         loadChildren: ()=> import ('./users/users.routes').then(u => u.routes),
         //children: userRoutes,
-        data: {
-            message: 'Hello buddy'
-        },
         resolve: {
             userName: resolveUserName
         },
